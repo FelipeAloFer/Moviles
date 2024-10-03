@@ -1,5 +1,6 @@
-package com.example.prueba;
+package pack;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -36,5 +37,7 @@ public class Actividad3_3 extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i("EJEMPLO", "Estoy onDestroy");
+        Intent ejemplo = new Intent(this, Actividad3_4.class);
+        startActivity(ejemplo);
     }
 }
