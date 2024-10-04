@@ -2,6 +2,7 @@ package com.example.actividad3_33_4;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i("EJEMPLO", "Estoy onDestroy");
+    }
+
+    public void onButtonClick(View view) {
+        Log.i("EJEMPLO", "Boton pulsado");
         Intent ejemplo = new Intent(this, SecondActivity.class);
         startActivity(ejemplo);
     }
