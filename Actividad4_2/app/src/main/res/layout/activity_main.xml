@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <!-- Top Left -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top|left"
+        android:background="#000000" />
+
+    <!-- Top Center -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top|center_horizontal"
+        android:background="#000000" />
+
+    <!-- Top Right -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="top|right"
+        android:background="#000000" />
+
+    <!-- Center Left -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical|left"
+        android:background="#000000" />
+
+    <!-- Center Center -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="#000000" />
+
+    <!-- Center Right -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical|right"
+        android:background="#000000" />
+
+    <!-- Bottom Left -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|left"
+        android:background="#000000" />
+
+    <!-- Bottom Center -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#000000" />
+
+    <!-- Bottom Right -->
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:background="#000000" />
+
+</FrameLayout>
