@@ -37,6 +37,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+<<<<<<< HEAD
+    implementation(libs.firebase.inappmessaging)
+=======
+>>>>>>> 7333e89d914264f4914b47babda02378b0d72a7c
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -1,5 +1,9 @@
 [versions]
+<<<<<<< HEAD
+agp = "8.6.0"
+=======
 agp = "8.5.0"
+>>>>>>> 7333e89d914264f4914b47babda02378b0d72a7c
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
@@ -7,6 +11,10 @@ appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
+<<<<<<< HEAD
+firebaseInappmessaging = "21.0.0"
+=======
+>>>>>>> 7333e89d914264f4914b47babda02378b0d72a7c
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -16,6 +24,10 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+<<<<<<< HEAD
+firebase-inappmessaging = { group = "com.google.firebase", name = "firebase-inappmessaging", version.ref = "firebaseInappmessaging" }
+=======
+>>>>>>> 7333e89d914264f4914b47babda02378b0d72a7c
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
