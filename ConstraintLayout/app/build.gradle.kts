@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.calculadora"
+    namespace = "com.example.constraintlayout"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.calculadora"
+        applicationId = "com.example.constraintlayout"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
