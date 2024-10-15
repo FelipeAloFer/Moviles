@@ -10,26 +10,47 @@
 
     <Button
         android:id="@+id/buttonIzquierda"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Izquierda"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toLeftOf="@id/buttonCentrado"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
         android:id="@+id/buttonCentrado"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Centrado"
-        app:layout_constraintLeft_toRightOf="@+id/buttonIzquierda"
+        app:layout_constraintLeft_toRightOf="@id/buttonIzquierda"
+        app:layout_constraintRight_toLeftOf="@id/buttonDerecha"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonDerecha"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Derecha"
-        app:layout_constraintLeft_toRightOf="@+id/buttonCentrado"
+        app:layout_constraintLeft_toRightOf="@id/buttonCentrado"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFila2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fila 2"
+        app:layout_constraintTop_toBottomOf="@id/buttonCentrado"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFila3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fila 3"
+        app:layout_constraintTop_toBottomOf="@id/buttonFila2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
