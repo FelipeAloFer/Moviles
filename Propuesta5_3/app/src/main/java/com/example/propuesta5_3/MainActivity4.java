@@ -1,10 +1,8 @@
-package com.example.propuesta5_1;
+package com.example.propuesta5_3;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.style.ForegroundColorSpan;
+import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -14,26 +12,26 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity4 extends AppCompatActivity {
-
+    TextView texto,texto2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main4);
+        texto = (TextView) findViewById(R.id.texto);
+        texto2 = (TextView) findViewById(R.id.texto);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main3), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-
         });
-
-        String texto = "Texto construido desde Java";
-
-        SpannableString mitexto = new SpannableString(texto);
-
-        mitexto.setSpan(new ForegroundColorSpan(Color.BLUE), 0, mitexto.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        
-        TextView textView = findViewById(R.id.texto2);
-        textView.setText(mitexto);
+    }
+    public void onButtonClick(View view1) {
+        Log.i("EJEMPLO", "Boton pulsado");
+        texto.setText("Boton 1 Pulsado");
+    }
+    public void onButtonClick2(View view1) {
+        Log.i("EJEMPLO", "Boton pulsado");
+        texto.setText("Boton 2 Pulsado");
     }
 }

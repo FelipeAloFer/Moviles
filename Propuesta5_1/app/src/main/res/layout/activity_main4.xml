@@ -6,7 +6,7 @@
     android:id="@+id/main3">
 
     <TextView
-        android:id="@+id/texto"
+        android:id="@+id/texto1"
         android:layout_width="320dp"
         android:layout_height="70dp"
         android:text="Texto construido desde el xml\n"
@@ -17,5 +17,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
