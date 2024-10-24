@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    android:id="@+id/main">
+
+    <!-- TextView para mostrar el resultado o la entrada -->
+    <TextView
+        android:id="@+id/visor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:gravity="end"
+        android:background="#EEEEEE"
+        android:padding="16dp"
+        android:text="0"
+        style="@style/MyVisorStyle"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:padding="16dp"
+        android:background="#F5F5F5"
+        android:orientation="horizontal">
+
+        <!-- Botones de operaciones -->
+        <Button
+            android:id="@+id/btnDividir"
+            android:text="/"
+            android:layout_column="3"
+            android:layout_gravity="fill"
+            app:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <!-- Botones numéricos y de operaciones -->
+        <Button
+            android:id="@+id/btn1"
+            android:text="1"
+            style="@style/MyMaterialButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="2"
+            style="@style/MyMaterialButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="3"
+            style="@style/MyMaterialButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/btnMultiplicar"
+            android:text="*"
+            style="@style/MyMaterialButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:text="4"
+            style="@style/MyMaterialButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="5"
+            style="@style/MyMaterialButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="6"
+            style="@style/MyMaterialButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/btnRestar"
+            android:text="-"
+            style="@style/MyMaterialButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/btn7"
+            android:text="7"
+            style="@style/MyMaterialButtonStyleBis"/>
+
+
+        <Button
+            android:id="@+id/btn8"
+            android:text="8"
+            style="@style/MyMaterialButtonStyleBis"/>
+
+
+        <Button
+            android:id="@+id/btn9"
+            android:text="9"
+            style="@style/MyMaterialButtonStyleBis"/>
+
+
+        <Button
+            android:id="@+id/btnSumar"
+            android:text="+"
+            style="@style/MyMaterialButtonStyleBis"/>
+
+
+        <!-- Botones de abajo -->
+        <Button
+            android:id="@+id/btn0"
+            android:text="0"
+            android:layout_columnSpan="2"
+            style="@style/MyMaterialButtonStyleBis"
+            android:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/btnDecimal"
+            android:text="."
+            style="@style/MyMaterialButtonStyleBis"/>
+
+
+        <Button
+            android:id="@+id/btnPotencia"
+            android:text="^"
+            style="@style/MyMaterialButtonStyleBis"/>
+
+
+        <Button
+            android:id="@+id/btnIgual"
+            android:text="="
+            android:layout_columnSpan="3"
+            app:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:text="Del"
+            app:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+    </GridLayout>
+
+</LinearLayout>

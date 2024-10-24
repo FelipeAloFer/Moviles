@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         setNumberListener(R.id.btn7, "7");
         setNumberListener(R.id.btn8, "8");
         setNumberListener(R.id.btn9, "9");
-        setNumberListener(R.id.btn00, "00");
 
         setOperatorListener(R.id.btnAdd, "+");
         setOperatorListener(R.id.btnSubtract, "-");
