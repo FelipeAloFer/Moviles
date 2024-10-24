@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    android:id="@+id/main">
+
+    <!-- Nombre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu nombre"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:backgroundTint="#FF9800"
+        android:padding="8dp" />
+
+    <!-- Apellidos -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellidos"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tus apellidos"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:backgroundTint="#FF9800"
+        android:padding="8dp" />
+
+    <!-- Número de Teléfono -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de Teléfono"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu número de teléfono"
+        android:inputType="phone"
+        android:textColor="#000000"
+        android:backgroundTint="#FF9800"
+        android:padding="8dp" />
+
+    <!-- Correo Electrónico -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo Electrónico"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu correo electrónico"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:backgroundTint="#FF9800"
+        android:padding="8dp" />
+
+    <!-- Contraseña -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu contraseña"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:backgroundTint="#FF9800"
+        android:padding="8dp" />
+
+    <!-- Botón de enviar -->
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
